@@ -10,5 +10,3 @@
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
 
 const number = (arr) => arr.map((el, i) => `${i + 1}: ${el}`);
-
-console.log(number(["a", "b", "c"]));
