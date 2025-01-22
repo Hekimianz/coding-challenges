@@ -21,4 +21,4 @@ const sortArray = (arr) => {
   return result;
 };
 
-sortArray([5, 8, 6, 3, 4]);
+
