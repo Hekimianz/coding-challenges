@@ -24,6 +24,3 @@ const narcissistic = (value) => {
   });
   return testSum === value;
 };
-
-console.log(narcissistic(153));
-console.log(narcissistic(1652));
