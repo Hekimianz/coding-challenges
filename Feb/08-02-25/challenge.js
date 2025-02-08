@@ -107,7 +107,7 @@ const decodeMorse = (morse) => {
     })
   );
   const final = result.join("").trim();
-  console.log(final);
+  return final;
 };
 
 decodeMorse(".... . -.--   .--- ..- -.. .");
