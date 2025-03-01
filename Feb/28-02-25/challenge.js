@@ -32,5 +32,3 @@ const greet = (lang) => {
   }
   return "Welcome";
 };
-
-console.log(greet("danish"));
