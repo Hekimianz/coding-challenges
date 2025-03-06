@@ -14,3 +14,4 @@
 const noBoringZeros = n => n === 0 ? 0 : +n.toString().replace(/0+$/, '');
 
 console.log(noBoringZeros(0));
+
