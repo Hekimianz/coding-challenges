@@ -14,26 +14,27 @@
 // 	•	Time complexity must be O(n).
 // 	•	Space complexity should be O(1).
 
-// takes as input an arr
-// returns an array of two ints inside of input arr that together sum 0
+// PLAN:
+// Takes as input an arr
+// Returns an array of two ints inside of input arr that together sum 0
+// - Initialize two pointers, one at 0, and one at the last index of arr (p1, p2)
+// - While p1 is less than p2:
+//   - Check the sum of the values at p1 and p2
+//   - If the sum is 0 return both values
+//   - If the sum is negative increment p1
+//   - If the sum is positive decrement p2
 
 const sumZero = (arr) => {
-  // initialize two pointers, one at 0, and one at the last index of arr (p1, p2)
   let p1 = 0;
   let p2 = arr.length - 1;
-  // while p1 is less than p2:
   while (p1 < p2) {
-    // check the sum of the values at p1 and p2
     const sum = arr[p1] + arr[p2];
-    // if the sum is 0 return both values
     if (sum === 0) return [arr[p1], arr[p2]];
-    // if the sum is negative increment p1
     if (sum < 0) {
       p1++;
-    }
-    // is the sum is positive decrement p2
-    else {
+    } else {
       p2--;
     }
   }
+  return;
 };
