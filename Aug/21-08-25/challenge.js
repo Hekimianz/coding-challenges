@@ -69,3 +69,13 @@ function switchItUp(n) {
       return 'Not a valid number';
   }
 }
+
+// PROBLEM 3
+// VOLUME OF A CUBOID
+// Bob needs a fast way to calculate the volume of a rectangular cuboid with three values: the length, width and height of the cuboid.
+
+// Write a function to help Bob with this calculation.
+
+function getVolumeOfCuboid(length, width, height) {
+  return width * length * height;
+}
