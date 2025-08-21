@@ -134,7 +134,39 @@ const checkExam = (arr1, arr2) => {
   return score > 0 ? score : 0;
 };
 
-console.log(checkExam(['a', 'a', 'b', 'b'], ['a', 'c', 'b', 'd']));
-console.log(checkExam(['a', 'a', 'c', 'b'], ['a', 'a', 'b', '']));
-console.log(checkExam(['a', 'a', 'b', 'c'], ['a', 'a', 'b', 'c']));
-console.log(checkExam(['b', 'c', 'b', 'a'], ['', 'a', 'a', 'c']));
+// console.log(checkExam(['a', 'a', 'b', 'b'], ['a', 'c', 'b', 'd']));
+// console.log(checkExam(['a', 'a', 'c', 'b'], ['a', 'a', 'b', '']));
+// console.log(checkExam(['a', 'a', 'b', 'c'], ['a', 'a', 'b', 'c']));
+// console.log(checkExam(['b', 'c', 'b', 'a'], ['', 'a', 'a', 'c']));
+
+// PROBLEM &
+// Multiplication Table
+// Your task, is to create N×N multiplication table, of size provided in parameter.
+
+// For example, when given size is 3:
+
+// 1 2 3
+// 2 4 6
+// 3 6 9
+// For the given example, the return value should be:
+
+// [[1,2,3],[2,4,6],[3,6,9]]
+
+const multiplicationTable = (x) => {
+  const table = [];
+
+  for (let i = 1; i <= x; i++) {
+    const currentTable = [];
+
+    for (let v = 1; v <= x; v++) {
+      currentTable.push(v * i);
+    }
+
+    table.push(currentTable);
+  }
+
+  return table;
+};
+
+// console.log(multiplicationTable(3));
+// console.log(multiplicationTable(4));
